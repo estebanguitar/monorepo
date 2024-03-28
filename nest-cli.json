@@ -10,15 +10,6 @@
   "monorepo": true,
   "root": "apps/myapp",
   "projects": {
-    "myapp": {
-      "type": "application",
-      "root": "apps/myapp",
-      "entryFile": "main",
-      "sourceRoot": "apps/myapp/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/myapp/tsconfig.app.json"
-      }
-    },
     "store": {
       "type": "application",
       "root": "apps/store",
@@ -44,6 +35,24 @@
       "sourceRoot": "apps/deliver/src",
       "compilerOptions": {
         "tsConfigPath": "apps/deliver/tsconfig.app.json"
+      }
+    },
+    "entity": {
+      "type": "application",
+      "root": "apps/entity",
+      "entryFile": "main",
+      "sourceRoot": "apps/entity/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/entity/tsconfig.app.json"
+      }
+    },
+    "parameter-manger": {
+      "type": "application",
+      "root": "apps/parameter-manger",
+      "entryFile": "main",
+      "sourceRoot": "apps/parameter-manger/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/parameter-manger/tsconfig.app.json"
       }
     }
   }

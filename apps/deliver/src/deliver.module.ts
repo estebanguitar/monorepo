@@ -1,6 +1,6 @@
-import { Module } from '@nestjs/common';
-import { DeliverController } from './deliver.controller';
-import { DeliverService } from './deliver.service';
+import { Module } from '@nestjs/common'
+import { DeliverController } from './deliver.controller'
+import { DeliverService } from './deliver.service'
 
 @Module({
   imports: [],
