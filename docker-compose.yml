@@ -1,0 +1,14 @@
+version: '1.0'
+
+services:
+  db:
+    image: mysql:8
+    container_name: myapp-db
+    restart: unless-stopped
+    ports:
+      - "33306:3306"
+    environment:
+      TZ: 'Asia/Seoul'
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: order
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci

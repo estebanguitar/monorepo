@@ -37,22 +37,22 @@
         "tsConfigPath": "apps/deliver/tsconfig.app.json"
       }
     },
-    "entity": {
+    "parameter-manager": {
       "type": "application",
-      "root": "apps/entity",
+      "root": "apps/parameter-manager",
       "entryFile": "main",
-      "sourceRoot": "apps/entity/src",
+      "sourceRoot": "apps/parameter-manager/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/entity/tsconfig.app.json"
+        "tsConfigPath": "apps/parameter-manager/tsconfig.app.json"
       }
     },
-    "parameter-manger": {
-      "type": "application",
-      "root": "apps/parameter-manger",
-      "entryFile": "main",
-      "sourceRoot": "apps/parameter-manger/src",
+    "entity": {
+      "type": "library",
+      "root": "libs/entity",
+      "entryFile": "index",
+      "sourceRoot": "libs/entity/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/parameter-manger/tsconfig.app.json"
+        "tsConfigPath": "libs/entity/tsconfig.lib.json"
       }
     }
   }
